@@ -36,8 +36,8 @@ const Home = () => {
         <CardMedia
           sx={{ background: '#BEBEBE80' }}
           component="img"
-          image="../public/images/Adventurnal Logo With Text.svg"
-          alt="Badly placed logo"
+          image="../images/logo.png"
+          alt="Brassless Chaps Logo, Text reads Brassless Chaps A Queer Brass Band In Portland Oregon surrounded by a circle containing pride flag colors. Beneath the text is an icon of a brass horn."
         />
         <div style={{ position: 'relative' }}>
           <div class="custom-shape-divider-top-1659224291">
@@ -58,92 +58,72 @@ const Home = () => {
           <Typography
             variant="h5"
             compontnt="div"
-            color="lightGrey"
-            sx={{ filter: 'drop-shadow(5px 5px 4px #000000)' }}
+            color="black"
+            // sx={{ filter: 'drop-shadow(5px 5px 4px #000000)' }}
           >
-            WELCOME TO ADVENTURNAL
+            Putting the ASS in BRASS with SASS
           </Typography>
           <Typography
             variant="body1"
-            color="lightGrey"
-            sx={{ filter: 'drop-shadow(5px 5px 4px #000000)' }}
+            color="black"
+            // sx={{ filter: 'drop-shadow(5px 5px 4px #000000)' }}
           >
-            your tabletop campaign journal, upgraded.
-          </Typography>
-          <Typography
-            variant="body2"
-            color="lightGrey"
-            sx={{ filter: 'drop-shadow(5px 5px 4px #000000)' }}
-          >
-            We aim to provide a location for all your record keeping, helping
-            you manage your characters. Keep a personal account of your sessions
-            for you to refer in the downtime between sessions. Log details about
-            your character and tag them for easier call backs.
+            Portland’s premier queer antifascist brass band.
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button
-            component={RouterLink}
-            to="/signup"
-            size="small"
-            color="primary"
-          >
-            <Typography variant="h7" color="gold">
-              Join Now!
-            </Typography>
-          </Button>
-        </CardActions>
       </Card>
       <Card
         sx={{
-          background: '#BEBEBE80',
-          maxWidth: '50%',
-          marginLeft: 'auto',
-          marginRight: '5%',
+          background: '#e4c3e2',
+          maxWidth: '95%',
+          margin: 'auto',
+          // marginRight: '5%',
           marginTop: '5%',
         }}
       >
         <CardMedia
+          sx={{
+            background: '#e4c3e2',
+            maxWidth: '60%',
+            marginLeft: 'auto',
+            marginRight: '5%',
+            marginTop: '5%',
+          }}
           component="img"
-          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkO1M6xnYe5H-C-HcJ-_PppG5MXcHwNs6ZPg&usqp=CAU"
+          image="../images/portrait.jpg"
           alt="Badly placed logo"
         />
         <CardContent>
           <Typography
             variant="h6"
-            color="lightGrey"
+            color="black"
             sx={{ filter: 'drop-shadow(5px 5px 4px #000000)' }}
           >
-            Create a Character
+            About Us
           </Typography>
           <Typography
             variant="body1"
-            color="lightGrey"
+            color="black"
             sx={{ filter: 'drop-shadow(5px 5px 4px #000000)' }}
           >
-            with our built in character editor!
+            Founded in April 2022, Brassless Chaps is an all queer brass band.
           </Typography>
           <Typography
             variant="body2"
-            color="lightGrey"
+            color="black"
             sx={{ filter: 'drop-shadow(5px 5px 4px #000000)' }}
           >
-            Add your character's name, race, and level. Use one of our custom
-            generated character tokens, or add your own image.
+            We are a Queer community band playing out and proud in the streets
+            of Portland, Oregon on the unceded lands of the Cowlitz, and
+            Confederated Tribes of the Grand Ronde people. Through our
+            performances we wish to promote Queer joy while highlighting Queer
+            artists and themes, as well as playing traditional brass band
+            standards and antifascist songs. We use our talents to support Queer
+            communities and other causes that reflect our values. We use the joy
+            of music as an act of resistance to achieve queer liberation through
+            music.
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button
-            component={RouterLink}
-            to="/signup"
-            size="small"
-            color="primary"
-          >
-            <Typography variant="h7" color="gold">
-              Create your hero!
-            </Typography>
-          </Button>
-        </CardActions>
       </Card>
       <Card
         sx={{
@@ -165,38 +145,30 @@ const Home = () => {
             color="lightGrey"
             sx={{ filter: 'drop-shadow(5px 5px 4px #000000)' }}
           >
-            Write your journal
-          </Typography>
-          <Typography
-            variant="body1"
-            color="lightGrey"
-            sx={{ filter: 'drop-shadow(5px 5px 4px #000000)' }}
-          >
-            tell your story!
+            Band Values
           </Typography>
           <Typography
             variant="body2"
             color="lightGrey"
             sx={{ filter: 'drop-shadow(5px 5px 4px #000000)' }}
           >
-            Each Character can have many journals, useful to keep track of your
-            latest session, build character backstory, or create fantastical
-            encounters for your next campaign! Anything you can dream up, you
-            can keep organized and ready at a moments notice.
+            Anti-racism Disability rights Transgender rights Kink positivity
+            Anti-misogyny and anti-transmisogyny Antifascism, including
+            resistance to agents of the state in the US (especially police and
+            immigration agents) Consent Do not touch anyone without their
+            explicit consent. Do not photograph or film anyone without their
+            explicit consent. Prison abolition Bodily autonomy including
+            healthcare access and access to abortions for all. Protection for
+            immigrants regardless of legal status. We believe that Black Lives
+            Matter, trans women are women, trans men are men, and all cops are
+            bad. Horizontal leadership - everyone is encouraged to take on a
+            leadership role if they wish. Take space, make space. Being aware of
+            the space you’re taking and stepping back. Inviting people to take
+            up more space. Embracing discomfort in the learning process.
+            Creating a judgement free zone for people to learn, explore and grow
+            as musicians and leaders. Making art accessible for all.
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button
-            component={RouterLink}
-            to="/signup"
-            size="small"
-            color="primary"
-          >
-            <Typography variant="h7" color="gold">
-              Craft your story!
-            </Typography>
-          </Button>
-        </CardActions>
       </Card>
       <Card
         sx={{
@@ -218,24 +190,26 @@ const Home = () => {
             color="lightGrey"
             sx={{ filter: 'drop-shadow(5px 5px 4px #000000)' }}
           >
-            Organize your sessions
-          </Typography>
-          <Typography
-            variant="body1"
-            color="lightGrey"
-            sx={{ filter: 'drop-shadow(5px 5px 4px #000000)' }}
-          >
-            with your journal's chapter system!
+            Membership
           </Typography>
           <Typography
             variant="body2"
             color="lightGrey"
             sx={{ filter: 'drop-shadow(5px 5px 4px #000000)' }}
           >
-            Every story has a begining, middle, and end. Keep yours organized
-            with chapters. Track sessions, recover key information from previous
-            encounters, and read through your party's memories before your next
-            meeting.
+            There is no age requirement to be in the band* Feel aligned with the
+            word “Queer” and share our values as listed in the membership
+            handbook. Have a skill, whether musical, visual, or supportive, that
+            they wish to include in our performances. While we call ourselves a
+            “brass” band, we are open-minded about instrumentation with the main
+            concerns being mobility and volume. Be willing to work with a
+            diverse group of people with respect and kindness. Be willing to
+            apologize and work to repair relationships when they cause harm. Be
+            welcomed by the rest of the band without objections (current members
+            may veto anyone they have safety concerns about and should let other
+            folks in the band know as soon as possible about those concerns).
+            *Anyone under the age of 18 is not permitted to be by themselves
+            with any other one band member for liability reasons.
           </Typography>
         </CardContent>
         <CardActions>

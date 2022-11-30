@@ -7,17 +7,22 @@ export const ME = gql`
       email
     }
   }
+`;
+
+export const BLOGPOSTS = gql`
   query blogPosts {
     blogPosts {
       _id
       title
       contents
     }
-    query
-    blogPost {
-      _id
-      title
-      contents
-    }
+  }
+`;
+
+export const BLOGPOST = gql`
+  query blogPost {
+    _id
+    title
+    contents
   }
 `;

@@ -28,6 +28,7 @@
   "homepage": "https://github.com/LordLowdar/Adventurnal#readme",
   "dependencies": {
     "concurrently": "^7.0.0",
-    "seed": "^0.4.4"
+    "seed": "^0.4.4",
+    "dotenv": "^16.0.0"
   }
 }

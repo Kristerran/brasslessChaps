@@ -16,6 +16,8 @@ import {
   CardMedia,
   CardActions,
   Button,
+  List,
+  ListItem,
 } from '@mui/material';
 
 const Home = () => {
@@ -159,11 +161,37 @@ const Home = () => {
           >
             <List>
               <ListItem>
+                <ListItemText>Anti-racism</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText>Disability rights</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText>Transgender rights</ListItemText>
+              </ListItem>
+              <ListItem>
+                <ListItemText>Kink positivity</ListItemText>
+              </ListItem>
+              <ListItem>
                 <ListItemText></ListItemText>
               </ListItem>
-              ,
+
+              <ListItem>
+                <ListItemText></ListItemText>
+              </ListItem>
+
+              <ListItem>
+                <ListItemText></ListItemText>
+              </ListItem>
+
+              <ListItem>
+                <ListItemText></ListItemText>
+              </ListItem>
+
+              <ListItem>
+                <ListItemText></ListItemText>
+              </ListItem>
             </List>
-            Anti-racism Disability rights Transgender rights Kink positivity
             Anti-misogyny and anti-transmisogyny Antifascism, including
             resistance to agents of the state in the US (especially police and
             immigration agents) Consent Do not touch anyone without their

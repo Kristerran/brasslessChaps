@@ -1,7 +1,7 @@
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
-require('dotenv').config();
+// require('dotenv').config();
 const { typeDefs, resolvers } = require('./schemas');
 // Import `authMiddleware()` function to be configured with the Apollo Server
 const { authMiddleware } = require('./utils/auth');
@@ -21,7 +21,6 @@ async function startApollo() {
   console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
 }
 startApollo();
-
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());

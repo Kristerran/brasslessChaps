@@ -157,6 +157,12 @@ const Home = () => {
             color="black"
             // sx={{ filter: 'drop-shadow(5px 5px 4px #000000)' }}
           >
+            <List>
+              <ListItem>
+                <ListItemText></ListItemText>
+              </ListItem>
+              ,
+            </List>
             Anti-racism Disability rights Transgender rights Kink positivity
             Anti-misogyny and anti-transmisogyny Antifascism, including
             resistance to agents of the state in the US (especially police and

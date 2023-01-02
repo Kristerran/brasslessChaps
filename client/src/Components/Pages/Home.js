@@ -155,58 +155,61 @@ const Home = () => {
           >
             Band Values
           </Typography>
+          <List>
+            <ListItem>
+              <ListItemText>Anti-racism</ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemText>Disability rights</ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemText>Transgender rights</ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemText>Kink positivity</ListItemText>
+            </ListItem>
+            <ListItem>
+              <ListItemText>Anti-misogyny and anti-transmisogyny</ListItemText>
+            </ListItem>
+
+            <ListItem>
+              <ListItemText>
+                Antifascism, including resistance to agents of the state in the
+                US (especially police and immigration agents)
+              </ListItemText>
+            </ListItem>
+
+            <ListItem>
+              <ListItemText>
+                Consent Do not touch anyone without their explicit consent. Do
+                not photograph or film anyone without their explicit consent.
+              </ListItemText>
+            </ListItem>
+
+            <ListItem>
+              <ListItemText> Prison abolition</ListItemText>
+            </ListItem>
+
+            <ListItem>
+              <ListItemText>
+                Bodily autonomy including healthcare access and access to
+                abortions for all.
+              </ListItemText>
+            </ListItem>
+          </List>
           <Typography
             variant="body2"
             color="black"
             // sx={{ filter: 'drop-shadow(5px 5px 4px #000000)' }}
           >
-            <List>
-              <ListItem>
-                <ListItemText>Anti-racism</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText>Disability rights</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText>Transgender rights</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText>Kink positivity</ListItemText>
-              </ListItem>
-              <ListItem>
-                <ListItemText></ListItemText>
-              </ListItem>
-
-              <ListItem>
-                <ListItemText></ListItemText>
-              </ListItem>
-
-              <ListItem>
-                <ListItemText></ListItemText>
-              </ListItem>
-
-              <ListItem>
-                <ListItemText></ListItemText>
-              </ListItem>
-
-              <ListItem>
-                <ListItemText></ListItemText>
-              </ListItem>
-            </List>
-            Anti-misogyny and anti-transmisogyny Antifascism, including
-            resistance to agents of the state in the US (especially police and
-            immigration agents) Consent Do not touch anyone without their
-            explicit consent. Do not photograph or film anyone without their
-            explicit consent. Prison abolition Bodily autonomy including
-            healthcare access and access to abortions for all. Protection for
-            immigrants regardless of legal status. We believe that Black Lives
-            Matter, trans women are women, trans men are men, and all cops are
-            bad. Horizontal leadership - everyone is encouraged to take on a
-            leadership role if they wish. Take space, make space. Being aware of
-            the space you’re taking and stepping back. Inviting people to take
-            up more space. Embracing discomfort in the learning process.
-            Creating a judgement free zone for people to learn, explore and grow
-            as musicians and leaders. Making art accessible for all.
+            Protection for immigrants regardless of legal status. We believe
+            that Black Lives Matter, trans women are women, trans men are men,
+            and all cops are bad. Horizontal leadership - everyone is encouraged
+            to take on a leadership role if they wish. Take space, make space.
+            Being aware of the space you’re taking and stepping back. Inviting
+            people to take up more space. Embracing discomfort in the learning
+            process. Creating a judgement free zone for people to learn, explore
+            and grow as musicians and leaders. Making art accessible for all.
           </Typography>
         </CardContent>
       </Card>

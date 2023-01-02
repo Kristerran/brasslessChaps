@@ -3,11 +3,11 @@ import { useMutation } from '@apollo/client';
 import { ADD_BLOGPOST } from '../../utils/mutations';
 import { useNavigate, useLocation, Navigate } from 'react-router-dom';
 import { ME } from '../../utils/queries';
-
+import Auth from '../../utils/auth';
 const Admin = () => {
   let navigate = useNavigate();
   let location = useLocation();
-  let from = location.state?.from?.pathname || '/home';
+  let from = location.state?.from?.pathname || '/admiralchap';
   const [blogpostinfo, setblogpostinfo] = useState({
     title: 'Title',
     contents: 'Contents',
@@ -25,6 +25,8 @@ const Admin = () => {
 
   const creation = async () => {
     const { title, contents } = blogpostinfo;
+    console.log(blogpostinfo);
+    console.log(title, contents);
     const { data } = await addBlogPost({
       variables: {
         title,
@@ -55,6 +57,10 @@ const Admin = () => {
 
         <button type="submit" onClick={creation} className="btn">
           Create Blog Post
+        </button>
+
+        <button onClick={() => Auth.logout()}>
+          <h6>Logout</h6>
         </button>
       </div>
     </div>

@@ -7,12 +7,16 @@ import {
   ApolloProvider,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
+import { Navigate } from 'react-router-dom';
 import Home from './Components/Pages/Home';
 import About from './Components/Pages/About';
+import Login from './Components/Pages/Login';
 import Admin from './Components/Pages/Admin';
 import Blog from './Components/Pages/Blog';
 import Videos from './Components/Pages/Videos';
 import Header from './Components/Header';
+import Footer from './Components/Footer';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -25,23 +29,55 @@ const authLink = setContext((_, { headers }) => {
     },
   };
 });
+function Authorize({ children }) {
+  const authed = localStorage.getItem('id_token') ? true : false;
+  return authed === true ? children : <Navigate to="/loginChap" replace />;
+}
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
 });
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      'brassika',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+  },
+});
 function App() {
   return (
-    <ApolloProvider client={client}>
-      <Router>
-        <Header />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/admiralchap" element={<Admin />} />
-          <Route exact path="/blog" element={<Blog />} />
-          <Route exact path="/videos" element={<Videos />} />
-        </Routes>
-      </Router>
-    </ApolloProvider>
+    <ThemeProvider theme={theme}>
+      <ApolloProvider client={client}>
+        <Router>
+          <Header />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route
+              exact
+              path="/admiralchap"
+              element={
+                <Authorize>
+                  <Admin />
+                </Authorize>
+              }
+            />
+            <Route exact path="/loginchap" element={<Login />} />
+            <Route exact path="/blog" element={<Blog />} />
+            <Route exact path="/videos" element={<Videos />} />
+          </Routes>
+          <Footer></Footer>
+        </Router>
+      </ApolloProvider>
+    </ThemeProvider>
   );
 }
 

@@ -20,18 +20,25 @@ const Blog = () => {
   if (error) return 'Crit failure, try again';
   return (
     <Container style={{ marginTop: '50px' }}>
-      <Typography>Blog</Typography>
+      <Typography style={{ textAlign: 'center' }} variant="h4">
+        Welcome to the brassless chaps blog
+      </Typography>
+      <Typography style={{ textAlign: 'center' }} variant="h6">
+        Where we share our latest news
+      </Typography>
       {error && <p>Error fetching data</p>}
       {loading && <p>Fetching data...</p>}
       {data && (
-        <div>
+        <Container>
           {data.blogPosts.map((post) => (
-            <div>
-              <h1>{post.title}</h1>
-              <h1>{post.contents}</h1>
-            </div>
+            <Card sx={{ marginTop: '10px' }}>
+              <CardContent>
+                <Typography variant="h5">{post.title}</Typography>
+                <Typography variant="p">{post.contents}</Typography>
+              </CardContent>
+            </Card>
           ))}
-        </div>
+        </Container>
       )}
     </Container>
   );

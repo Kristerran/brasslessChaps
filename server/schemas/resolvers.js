@@ -57,6 +57,9 @@ const resolvers = {
     },
 
     addBlogPost: async (parent, { title, contents }, context) => {
+      console.log(context.user);
+      console.log(parent);
+      console.log(title, contents);
       // If context has a `user` property, that means the user executing this mutation has a valid JWT and is logged in
       if (context.user) {
         const blogPost = await BlogPost.create({

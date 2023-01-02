@@ -1,3 +1,11 @@
+@font-face {
+  font-family: loveAndStars;
+  src: url(../public/Fonts/STARS&LOVE-BOTTOMHEAVY.TTF);
+}
+@font-face {
+  font-family: brassika;
+  src: url(../public/Fonts/BRASIKA-DISPLAY.OTF);
+}
 
 body{
   margin: 0;

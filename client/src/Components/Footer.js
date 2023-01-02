@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AppBar, Typography, IconButton } from '@mui/material';
+import { AppBar, Typography, Button } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 // import Typography from '@mui/material/Typography';
@@ -16,7 +16,7 @@ const Footer = (props) => {
   return (
     <Box sx={{ bgcolor: 'none', p: 6 }} component="footer">
       <Typography color="Grey" variant="h6" align="center" gutterBottom>
-        Adventurnal
+        Brassless Chaps!
       </Typography>
       <Typography
         variant="subtitle1"
@@ -25,7 +25,7 @@ const Footer = (props) => {
         s
         component="p"
       >
-        Created by Julian Williams, Ryan Skog, and Kris Baily
+        Website created by Kris Terran Baily
       </Typography>
     </Box>
   );

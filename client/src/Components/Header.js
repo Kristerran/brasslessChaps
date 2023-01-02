@@ -31,14 +31,32 @@ const Header = (props) => {
         </nav>
         <nav style={{ marginLeft: 'auto', marginRight: '5%' }}>
           <IconButton
+            s
+            href="https://www.facebook.com/brasslesschapspdx/"
+            sx={{ color: '#C1A84F' }}
+          >
+            <Typography variant="h6">Facebook</Typography>
+          </IconButton>
+        </nav>
+        <nav style={{ marginLeft: 'auto', marginRight: '5%' }}>
+          <IconButton
+            s
+            href="https://www.meetup.com/brasslesschaps/"
+            sx={{ color: '#C1A84F' }}
+          >
+            <Typography variant="h6">Meetup</Typography>
+          </IconButton>
+        </nav>
+        {/* <nav style={{ marginLeft: 'auto', marginRight: '5%' }}>
+          <IconButton
             component={RouterLink}
             to="/videos"
             sx={{ color: '#C1A84F' }}
           >
             <Typography variant="h6">Media</Typography>
           </IconButton>
-        </nav>
-        <nav style={{ marginLeft: 'auto', marginRight: '5%' }}>
+        </nav> */}
+        {/* <nav style={{ marginLeft: 'auto', marginRight: '5%' }}>
           <IconButton
             component={RouterLink}
             to="/about"
@@ -46,7 +64,7 @@ const Header = (props) => {
           >
             <Typography variant="h6">About Us</Typography>
           </IconButton>
-        </nav>
+        </nav> */}
       </Toolbar>
     </AppBar>
   );

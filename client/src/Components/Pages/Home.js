@@ -99,7 +99,7 @@ const Home = () => {
             marginTop: '5%',
           }}
           component="img"
-          image="./images/portrait.jpg"
+          image="../client/public/images/portrait.jpg"
           alt="Group photo of band posing with instruments in colorful outfits"
         />
         <CardContent

@@ -17,7 +17,7 @@ const Header = (props) => {
     >
       <Toolbar sx={{ justifyContent: 'space-evenly' }}>
         <IconButton component={RouterLink} to="/">
-          <img src="../images/logo.svg" />
+          <img src="./public/logo.svg" />
         </IconButton>
         <nav style={{ marginLeft: 'auto', marginRight: '5%' }}>
           <IconButton

@@ -44,7 +44,7 @@ const Home = () => {
               margin: 'auto',
             }}
             component="img"
-            image="./images/logo.png"
+            image="./public/logo.png"
             alt="Brassless Chaps Logo, Text reads Brassless Chaps A Queer Brass Band In Portland Oregon surrounded by a circle containing pride flag colors. Beneath the text is an icon of a brass horn."
           />
         </div>
@@ -99,7 +99,7 @@ const Home = () => {
             marginTop: '5%',
           }}
           component="img"
-          image="../client/public/images/portrait.jpg"
+          image="./public/portrait.jpg"
           alt="Group photo of band posing with instruments in colorful outfits"
         />
         <CardContent

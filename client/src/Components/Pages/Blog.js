@@ -23,8 +23,8 @@ const Blog = () => {
       <Typography style={{ textAlign: 'center' }} variant="h4">
         Welcome to the brassless chaps blog
       </Typography>
-      <Typography style={{ textAlign: 'center' }} variant="h6">
-        Where we share our latest news
+      <Typography style={{ textAlign: 'center' }} variant="h6" >
+        Where we share our latest news, 
       </Typography>
       {error && <p>Error fetching data</p>}
       {loading && <p>Fetching data...</p>}
